@@ -1,0 +1,66 @@
+<div class="product">
+  <div>
+    <input type="checkbox" checked="checked">
+    <label>Hot-dog ingradients:</label>
+  </div>
+  <div class="product-container">
+    <div>
+      <label>
+        <input type="checkbox" [checked]="product.ingradients.roll.exist" disabled="true">
+        Roll<img src="./../../../assets/hotdog_and_hamburger_buns_x.jpg"></label>
+    </div>
+
+    <div>
+      <label>
+        <input #sausage
+          type="checkbox"
+          [(ngModel)]="product.ingradients.sausage.exist"
+          [checked]="product.ingradients.sausage.exist"
+          (change)="addProduct(sausage.checked, product.ingradients.sausage.price)">
+        Sausage<img src="./../../../assets/69167_pla_hotdogs_chicken_6.jpg"></label>
+    </div>
+    <div>
+      <label>
+        <input #bavarianSausage 
+        type="checkbox"
+        [(ngModel)]="product.ingradients.bavarianSausage.exist"
+        [checked]="product.ingradients.bavarianSausage.exist"
+        (change)="addProduct(bavarianSausage.checked, product.ingradients.bavarianSausage.price)">
+        Bavarian sausage<img src="./../../../assets/29274257_w640_h640_kolbaski-bavarskie-pk.jpg"></label>
+    </div>
+
+    <div>
+      <label>
+        <input #ketchup 
+        type="checkbox"
+        [(ngModel)]="product.ingradients.ketchup.exist"
+        [checked]="product.ingradients.ketchup.exist"
+        (change)="addProduct(ketchup.checked, product.ingradients.ketchup.price)">
+        Ketchup<img src="./../../../assets/ketchup1.jpg"></label>
+    </div>
+
+    <div>
+      <label>
+        <input #mustard
+        type="checkbox"
+        [(ngModel)]="product.ingradients.mustard.exist"
+        [checked]="product.ingradients.mustard.exist"
+        (change)="addProduct(mustard.checked, product.ingradients.mustard.price)">
+        Mustard<img src="./../../../assets/istockphoto-466120370-612x612.jpg"></label>
+    </div>
+
+    <div>
+      <label>
+        <input #mayonnaise
+        type="checkbox"
+        [(ngModel)]="product.ingradients.mayonnaise.exist"
+        [checked]="product.ingradients.mayonnaise.exist"
+        (change)="addProduct(mayonnaise.checked, product.ingradients.mayonnaise.price)">
+        Mayonnaise<img src="./../../../assets/mayonnaise-sauce-500x500.jpg"></label>
+    </div>
+  </div>
+  <div class="total-price">
+    <p>Price: {{total}} UAH</p>
+  </div>
+  <button (click)="onDelete()">Delete</button>
+</div>

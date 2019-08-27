@@ -1,0 +1,14 @@
+.product-container img {
+  height: 20px;
+}
+
+.product-container {
+  display: flex;
+  padding: 15px 0;
+}
+
+.product {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

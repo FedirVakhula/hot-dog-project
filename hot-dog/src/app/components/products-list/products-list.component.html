@@ -1,0 +1,14 @@
+<div>
+  <ul>
+    <li *ngFor="let product of productsList let count=index">
+      <div>
+        {{count+1}}
+      </div>
+      <app-product
+      [product]="product"
+      (deleteProduct)="onDeleteProduct($event)"
+      (changeIngradients)="onchangeIngradientProduct($event)"></app-product>
+    </li>
+  </ul>
+  <h3>TOTAL PRICE: {{totalPrice}}</h3>
+</div>

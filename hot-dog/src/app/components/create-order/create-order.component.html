@@ -1,0 +1,64 @@
+<h2>Choose ingradients:</h2>
+<div class="order-container">
+  <div>
+    <label>
+      <input type="checkbox" checked="checked" disabled="true">
+      Roll<img src="./../../../assets/hotdog_and_hamburger_buns_x.jpg"></label>
+  </div>
+  
+  <div>
+    <label>
+      <img src="./../../../assets/69167_pla_hotdogs_chicken_6.jpg">
+      Sausage
+      <input 
+        #sausage
+        type="checkbox"
+        (change)="addProduct(sausage.checked, priceSausage)">
+      </label>
+  </div>
+  <div>
+    <label>
+      <input 
+        #bavarianSausage
+        type="checkbox"
+        (change)="addProduct(bavarianSausage.checked, priceBavarianSausage)">
+      Bavarian sausage<img src="./../../../assets/29274257_w640_h640_kolbaski-bavarskie-pk.jpg"></label>
+  </div>
+
+  <div>
+    <label>
+      <img src="./../../../assets/ketchup1.jpg">
+       Ketchup
+      <input 
+        #ketchup
+        type="checkbox"
+        (change)="addProduct(ketchup.checked, priceKetchup)">
+     </label>
+  </div>
+
+  <div>
+    <label>
+      <input 
+        #mustard
+        type="checkbox"
+        (change)="addProduct(mustard.checked, priceMustard)">
+      Mustard<img src="./../../../assets/istockphoto-466120370-612x612.jpg"></label>
+  </div>
+
+  <div>
+    <label>
+      <img src="./../../../assets/mayonnaise-sauce-500x500.jpg">
+      Mayonnaise
+      <input #mayonnaise
+        type="checkbox"
+        (change)="addProduct(mayonnaise.checked, priceMayonnaise)">
+      </label>
+  </div>
+</div>
+<div class="total-order">
+  <p>Total: {{total}} UAH</p>
+
+  <button
+    (click)="onAdd()"
+    >Order</button>
+</div>

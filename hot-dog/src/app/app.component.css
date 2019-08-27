@@ -1,0 +1,25 @@
+:host {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.logo{
+    display: block;
+}
+.header-container {
+    display: flex;
+}
+.header-text {
+    font-size: 60px;
+    color: rgb(165, 42, 42);
+    flex-grow: 3;
+    text-align: center;
+}
+.footer-container {
+    height: 50px;
+    background-color: rgb(216, 187, 58);
+}

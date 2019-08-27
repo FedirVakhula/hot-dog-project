@@ -1,0 +1,24 @@
+.order-container {
+    font-size: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    justify-content: center;
+    width: 50%;
+}
+.order-container img {
+    height: 25px;
+}
+.total-order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+}
+.total-order button {
+    font-size: 25px;
+}
+.order-container div {
+    padding: 20px;
+}

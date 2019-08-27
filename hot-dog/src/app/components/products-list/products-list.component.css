@@ -1,0 +1,10 @@
+li {
+    display: flex;
+    height: max-content;
+    align-items: center;
+    justify-content: space-between;
+}
+
+app-product {
+    flex-grow: 2;
+}
